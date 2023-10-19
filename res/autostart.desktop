@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=WindowsDrive
+Name[zh_CN]=Windows盘符
+Comment=A Tool For Read Windows Drive Letter
+Comment[zh_CN]=读取本机Windows磁盘的盘符
+Exec=WindowsDrive --autostart
+Icon=windows-drive
+Terminal=false
+Type=Application
+Categories=GNOME;Qt;Utility;KDE;Misc;
+StartupNotify=true
+Keywords=Windows;Windows Drive;Drive Letter;

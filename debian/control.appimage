@@ -1,0 +1,17 @@
+Source: windows-drive
+Section: misc
+Priority: optional
+Maintainer: Wei Keting <weikting@gmail.com>
+Build-Depends: pkg-config,build-essential, dh-make
+Standards-Version: 4.4.1
+Homepage: https://gitee.com/wkt/WindowsDrive
+Vcs-Browser: https://gitee.com/wkt/WindowsDrive
+Vcs-Git: https://gitee.com/wkt/WindowsDrive.git
+
+Package: windows-drive
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libegl1-mesa | libegl1-x11 | libegl1, sed, coreutils, udev, udisks2|sudo, grep
+Recommends: qt5-gtk-platformtheme|qt5-gtk2-platformtheme
+Description: A tool to read the `Drive Letter` for windows partitions 
+ A tool to read the `Drive Letter` for Windows Partitions for Linux. 
+ Windows Partition is a disk partition that windows show it on file manager with a drive letter.

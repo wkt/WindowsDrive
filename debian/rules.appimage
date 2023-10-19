@@ -1,0 +1,37 @@
+#!/usr/bin/make -f
+
+app_imgage:=app_imgage
+extract_dir:=squashfs-root 
+
+%:
+	dh $@
+
+_override_dh_clean:
+	dh_auto_clean
+	rm -rf debian/windows-drive/
+
+override_dh_auto_configure:
+	rm -rf debian/windows-drive
+	true
+
+override_dh_auto_build:
+	dh_auto_build
+
+override_dh_auto_install:
+	mkdir -p debian/windows-drive && mkdir -p debian/windows-drive/usr/share/icons/hicolor/scalable/apps \
+    debian/windows-drive/usr/bin debian/windows-drive/usr/share/applications
+	rm -rf $(extract_dir) && $(app_imgage) --appimage-extract
+	cp -a $(extract_dir) debian/windows-drive/opt && rm -rf $(extract_dir) \
+	&& ln -sf ../../opt/usr/bin/windows-drive ../../opt/usr/bin/WindowsDrive debian/windows-drive/usr/bin \
+    && mv debian/windows-drive/opt/windows-drive.svg debian/windows-drive/usr/share/icons/hicolor/scalable/apps \
+    && mv debian/windows-drive/opt/windows-drive.desktop debian/windows-drive/usr/share/applications
+	rm -rf debian/windows-drive/opt/AppRun debian/windows-drive/opt/.DirIcon
+
+override_dh_strip:
+	true
+
+_override_dpkg-shlibdeps:
+	true
+
+_override_dh_shlibdeps:
+	true

@@ -1,0 +1,17 @@
+Source: windows-drive
+Section: misc
+Priority: optional
+Maintainer: Wei Keting <weikting@gmail.com>
+Build-Depends: pkg-config,build-essential,qtbase5-dev(>=5.6),qtbase5-dev-tools(>=5.6), qttools5-dev-tools, qttools5-dev, qt5-default, libbfio-dev, libregf-dev,cmake,dh-make
+Standards-Version: 4.4.1
+Homepage: https://gitee.com/wkt/WindowsDrive
+Vcs-Browser: https://gitee.com/wkt/WindowsDrive
+Vcs-Git: https://gitee.com/wkt/WindowsDrive.git
+
+Package: windows-drive
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqt5svg5, sed, coreutils, udev, udisks2|sudo, grep
+Recommends: qt5-gtk-platformtheme|qt5-gtk2-platformtheme
+Description: A tool to read the `Drive Letter` for windows partitions 
+ A tool to read the `Drive Letter` for Windows Partitions for Linux. 
+ Windows Partition is a disk partition that windows show it on file manager with a drive letter.

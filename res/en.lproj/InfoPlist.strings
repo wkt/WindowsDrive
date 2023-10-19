@@ -1,0 +1,4 @@
+CFBundleName = "WindowsDrive";
+CFBundleDisplayName = "WindowsDrive";
+NSPortName = "WindowsDrive";
+NSHumanReadableCopyright = "Copyright © 2022. All rights reserved.";

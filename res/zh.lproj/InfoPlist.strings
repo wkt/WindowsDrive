@@ -1,0 +1,4 @@
+CFBundleName = "Windows盘符";
+CFBundleDisplayName = "Windows盘符";
+NSPortName = "Windows盘符";
+NSHumanReadableCopyright = "Copyright © 2022. All rights reserved.";

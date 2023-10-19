@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>app.svg</file>
+        <file>loading.gif</file>
+        <file>win.png</file>
+    </qresource>
+    <qresource prefix="/i18n">
+        <file>WindowsDrive_zh_CN.ts</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>autostart.desktop</file>
+    </qresource>
+</RCC>
