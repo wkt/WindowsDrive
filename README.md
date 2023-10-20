@@ -6,4 +6,6 @@
    macOS: [x86_64](https://windows-drive.weiketing.com/downloads)
 
 ## Screenshot
-<img src="screenshots/windows-drive.png">
+<img src="screenshots/windows-drive.png"><br>
+<img src="screenshots/mac_2023-10-21_00-12-37.png"><br>
+
